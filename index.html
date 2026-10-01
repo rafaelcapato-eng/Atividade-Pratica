@@ -1,134 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aula 66 — Vídeo Acessível com Legendas</title>
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f6f8;
-      color: #1f2937;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #1f4e79;
-      color: white;
-      padding: 28px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0 0 8px;
-      font-size: 2rem;
-    }
-
-    header p {
-      margin: 0;
-      font-size: 1.05rem;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 0 20px 40px;
-    }
-
-    section {
-      background: white;
-      margin-bottom: 24px;
-      padding: 24px;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    }
-
-    h2 {
-      color: #1f4e79;
-      margin-top: 0;
-    }
-
-    .video-container {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    video {
-      width: 100%;
-      max-width: 760px;
-      border-radius: 10px;
-      background: black;
-    }
-
-    .transcricao {
-      background: #f8fafc;
-      border-left: 4px solid #1f4e79;
-      padding: 12px 16px;
-      margin-top: 15px;
-      border-radius: 0 6px 6px 0;
-    }
-
-    footer {
-      text-align: center;
-      color: #6b7280;
-      font-size: 0.9rem;
-      padding: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog sem Parede de Texto - Redesign de Leitura</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <header>
-    <h1>Desenvolvimento Web — Multimídia Acessível</h1>
-    <p>Prática de inserção de vídeo com a tag &lt;video&gt; e legendas &lt;track&gt;</p>
-  </header>
+    <!-- Botões para controle e personalização da leitura -->
+    <div class="acessibilidade">
+        <button id="aumentar">Aumentar texto</button>
+        <button id="diminuir">Diminuir texto</button>
+    </div>
 
-  <main>
+    <!-- Conteúdo reestruturado com marcação semântica -->
+    <article>
+        <h1>Inteligência Artificial na Educação</h1>
 
-    <section>
-      <h2>Apresentação da Aula</h2>
-      <p>Assista ao vídeo abaixo para compreender os conceitos básicos de desenvolvimento web e recursos de acessibilidade multimídia.</p>
+        <p>A inteligência artificial está sendo stilizada em diferentes áreas da educação.</p>
 
-      <div class="video-container">
-        <video controls aria-label="Vídeo explicativo sobre Desenvolvimento Web e Acessibilidade">
-          <source src="video.mp4" type="video/mp4">
+        <h2>Principais aplicações</h2>
+        <ul>
+            <li>Personalização da aprendizagem;</li>
+            <li>Correção de atividades;</li>
+            <li>Apoio aos professores;</li>
+            <li>Criação de materiais educacionais.</li>
+        </ul>
 
-          <track
-            src="legendas.vtt"
-            kind="subtitles"
-            srclang="pt-BR"
-            label="Português"
-            default
-          >
+        <h2>Resumo</h2>
+        <p>A IA pode apoiar estudantes e professores, mas seu uso precisa ser planejado.</p>
+    </article>
 
-          Seu navegador não suporta a reprodução de vídeos em HTML5.
-        </video>
-      </div>
-
-      <!-- Transcrição para auxílio de leitores de tela e acessibilidade extra -->
-      <div class="transcricao">
-        <h3>Transcrição do Vídeo</h3>
-        <p><strong>[00:00 - 00:03]</strong> Bem-vindos à nossa aula.</p>
-        <p><strong>[00:03 - 00:07]</strong> Hoje vamos estudar desenvolvimento web.</p>
-        <p><strong>[00:07 - 00:11]</strong> Também vamos conhecer recursos de acessibilidade multimídia.</p>
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    Desenvolvimento de Sistemas — Programação Front-End (Aula 66)
-  </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
-
-E cole o repósitorio logo abaixo dos documentos.
