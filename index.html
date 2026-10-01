@@ -1,127 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>A Utilização da IA na Educação</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Evolução da Tecnologia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <style>
-      /* Importação da fonte OpenDyslexic via CDN */
-      @font-face {
-        font-family: 'OpenDyslexic';
-        src: url('https://cdn.jsdelivr.net/npm/opendyslexic@1.0.3/alt-style/OpenDyslexic-Regular.otf') format('opentype');
-        font-weight: normal;
-        font-style: normal;
-      }
-daqui
-      /* Estilo base */
-      body {
-        font-family: Arial, sans-serif;
-        font-size: 18px;
-        line-height: 1.6;
-        padding: 20px;
-      }
-
-      /* Classe ativada para aplicar a fonte para dislexia */
-      body.fonte-dislexia {
-        font-family: 'OpenDyslexic', Arial, sans-serif !important;
-        letter-spacing: 0.3px;
-        word-spacing: 1px;
-      }
-
-      article {
-        max-width: 750px;
-        margin: auto;
-      }
-
-      p {
-        margin-bottom: 20px;
-      }
-
-      /* Barra de controles de acessibilidade */
-      .controles-acessibilidade {
-        display: flex;
-        gap: 10px;
-        margin-bottom: 20px;
-        flex-wrap: wrap;
-      }
-
-      .controles-acessibilidade button {
-        padding: 8px 14px;
-        font-size: 14px;
-        cursor: pointer;
-        border: 1px solid #0056b3;
-        background-color: #0056b3;
-        color: #ffffff;
-        border-radius: 4px;
-        transition: background-color 0.2s ease;
-      }
-
-      .controles-acessibilidade button:hover {
-        background-color: #003d82;
-      }
-    </style>
-  </head>
-  <body>
-    <article>
-      <!-- Painel com os botões de acessibilidade -->
-      <div class="controles-acessibilidade">
+    <!-- Controles de acessibilidade -->
+    <div class="acessibilidade">
         <button id="aumentar">Aumentar texto</button>
         <button id="diminuir">Diminuir texto</button>
-        <button id="alternar-fonte">Fonte para Dislexia: OFF</button>
-      </div>
+    </div>
 
-      <h1>Inteligência Artificial na Educação</h1>
+    <article>
+        <h1>A Evolução da Tecnologia</h1>
 
-      <p>
-        A inteligência artificial está sendo utilizada em diferentes áreas da
-        educação.
-      </p>
+        <p>A evolução da tecnologia reflete a busca constante da humanidade por ferramentas que simplifiquem tarefas e melhorem a qualidade de vida.</p>
 
-      <h2>Principais aplicações</h2>
+        <h2>Principais Eras Tecnológicas</h2>
+        <ul>
+            <li><strong>Pré-História e Idade Antiga:</strong> Criação de ferramentas de pedra, controle do fogo, invenção da roda e surgimento da escrita.</li>
+            <li><strong>Idade Média e Moderna:</strong> Desenvolvimento da imprensa de tipos móveis por Gutenberg e instrumentos de navegação.</li>
+            <li><strong>Revolução Industrial:</strong> Surgimento da máquina a vapor, eletricidade, telégrafo e produção em massa nas fábricas.</li>
+            <li><strong>Século XX (Era Digital):</strong> Invenção do computador, do transistor, dos microprocessadores e o nascimento da internet.</li>
+            <li><strong>Século XXI (Era Conectada):</strong> Popularização dos smartphones, redes móveis avançadas, computação em nuvem e inteligência artificial.</li>
+        </ul>
 
-      <ul>
-        <li>Personalização da aprendizagem;</li>
-        <li>Correção de atividades;</li>
-        <li>Apoio aos professores;</li>
-        <li>Criação de materiais educacionais.</li>
-      </ul>
-
-      <h2>Resumo</h2>
-
-      <p>
-        A IA pode apoiar estudantes e professores, mas seu uso precisa ser
-        planejado.
-      </p>
+        <h2>Resumo</h2>
+        <p>A tecnologia evoluiu de ferramentas básicas de sobrevivência para sistemas digitais e inteligentes, transformando profundamente a forma como vivemos e nos comunicamos.</p>
     </article>
 
-    <!-- Script de acessibilidade -->
-    <script>
-      let tamanho = 18;
-
-      // Aumentar tamanho da fonte
-      document.querySelector("#aumentar").onclick = function () {
-        tamanho += 2;
-        document.body.style.fontSize = tamanho + "px";
-      };
-
-      // Diminuir tamanho da fonte
-      document.querySelector("#diminuir").onclick = function () {
-        if (tamanho > 10) { // Previne que o texto fique menor que 10px
-          tamanho -= 2;
-          document.body.style.fontSize = tamanho + "px";
-        }
-      };
-
-      // Alternar para a fonte OpenDyslexic
-      const btnFonte = document.querySelector("#alternar-fonte");
-      btnFonte.onclick = function () {
-        document.body.classList.toggle("fonte-dislexia");
-        const ativado = document.body.classList.contains("fonte-dislexia");
-        btnFonte.textContent = ativado ? "Fonte para Dislexia: ON" : "Fonte para Dislexia: OFF";
-      };
-    </script>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
-aa
