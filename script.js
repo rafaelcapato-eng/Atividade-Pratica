@@ -1,15 +1,13 @@
-let tamanho = 18;
+const nomeDoCurso = "Desenvolvimento de Sistemas";
+let pontuacaoDoJogador = 1;
+const dataDeNascimento = "29/05/2010";
+let quantidadeDeProdutos = 50;
+const nomeDaEmpresa = "Colegio Estadual Ulysses Guimaraes";
+let saldoDaConta = 1500.00;
 
-// Aumentar o tamanho do texto
-document.querySelector("#aumentar").onclick = function () {
-    tamanho += 2;
-    document.body.style.fontSize = tamanho + "px";
-};
-
-// Diminuir o tamanho do texto
-document.querySelector("#diminuir").onclick = function () {
-    if (tamanho > 12) { // Limite mínimo para manter legível
-        tamanho -= 2;
-        document.body.style.fontSize = tamanho + "px";
-    }
-};
+console.log(nomeDoCurso);
+console.log(pontuacaoDoJogador);
+console.log(dataDeNascimento);
+console.log(quantidadeDeProdutos);
+console.log(nomeDaEmpresa);
+console.log(saldoDaConta);
